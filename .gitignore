@@ -1,0 +1,13 @@
+## folders
+.vscode/
+__pycache__/
+.pytest_cache/
+## file
+*.o
+*.so
+*.pyc
+# specific files
+main
+notes.md
+.DS_Store
+
