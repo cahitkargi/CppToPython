@@ -19,7 +19,7 @@ obfiles: $(O_FILES)
 
 # main
 .ONESHELL:
-$(TARGET): $(O_FILES)
+$(TARGET): $(TARGET).cc $(O_FILES)
 	$(CPPC) $(CPPSTD) -o $(TARGET) $(TARGET).cc $(O_FILES)
 	./$(TARGET)
 
