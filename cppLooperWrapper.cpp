@@ -9,7 +9,6 @@ int returnC(){
 }
 
 extern "C" {
-    //CppLooper* PUBLIC_FUNC CppLooper_new(int loopCount, bool lcWithPow){ return new CppLooper(loopCount, lcWithPow); }
     CppLooper* PUBLIC_FUNC CppLooper_new(){ return new CppLooper(); }
     //void PUBLIC_FUNC CppLooper_del(CppLooper* cppl){ delete cppl; }
 

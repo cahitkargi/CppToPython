@@ -16,7 +16,6 @@ public:
     void loopIt();
 
     CppLooper(/* args */);
-    //Foo(int lc = 0, bool lb = false);
     ~CppLooper();
 };
 

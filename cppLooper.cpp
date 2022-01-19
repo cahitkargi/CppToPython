@@ -6,10 +6,6 @@ CppLooper::CppLooper(/* args */)
 {
 }
 
-// CppLooper::CppLooper(int lc, bool lb) : lcount(lc), lcPow(lb)
-// {
-// }
-
 CppLooper::~CppLooper()
 {
     std::cout << "deleting" << std::endl;
@@ -36,7 +32,6 @@ void CppLooper::loopIt(){
     int res{};
     for(int ind{}; ind < lcount; ++ind){
         res += 1;
-        //continue;
     }
     std::cout << res << std::endl;
 }

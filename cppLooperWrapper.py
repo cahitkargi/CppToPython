@@ -26,8 +26,6 @@ class CppLooper:
 
     def __init__(self, loopCount=0, lcWithPow=False):
         self.obj = lib.CppLooper_new()
-        # self.loopCount = loopCount
-        # self.lcWithPow = lcWithPow
 
     @property
     def loopCount(self):
