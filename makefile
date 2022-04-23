@@ -1,11 +1,11 @@
 # use 'make pyBind' to create the shared library for Python
 # use 'make main' to compile and execute the main.cc
 
-CPPC = g++
-CPPSTD = -std=c++17
-TARGET = main
-SO_FILE = pyBind
-CFLAGS = -fPIC
+CPPC := g++
+CPPSTD := -std=c++17
+TARGET := main
+SO_FILE := pyBind
+CFLAGS := -fPIC
 
 CPP_FILES=$(wildcard *.cpp)
 O_FILES=$(CPP_FILES:.cpp=.o)
