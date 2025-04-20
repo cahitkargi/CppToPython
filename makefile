@@ -26,9 +26,16 @@ $(TARGET): $(TARGET).cc $(O_FILES)
 
 ## pyBind
 
+UNAME_S := $(shell uname -s)
+
+ifeq ($(UNAME_S),Darwin)
+    INSTALL_NAME := -Wl,-install_name,$(SO_FILE).so
+else
+    INSTALL_NAME :=
+endif
+
 $(SO_FILE).so: $(O_FILES)
-	$(CPPC) $(CPPSTD) -shared -Wl,-install_name,$(SO_FILE).so -o $(SO_FILE).so $(O_FILES)
+	$(CPPC) $(CPPSTD) -shared $(INSTALL_NAME) -o $(SO_FILE).so $(O_FILES)
 
 .PHONY: $(SO_FILE)
 $(SO_FILE): $(SO_FILE).so
-	
