@@ -39,3 +39,6 @@ $(SO_FILE).so: $(O_FILES)
 
 .PHONY: $(SO_FILE)
 $(SO_FILE): $(SO_FILE).so
+
+clean:
+	rm $(O_FILES)
